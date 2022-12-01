@@ -1,10 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body {
-  /* background-color: #0F151D; */
-  padding: 3rem;
+  font-family: 'poppins', sans-serif;
+  font-size: 15px;
 }
-.tab-button-container{
+h1{
+  margin: 0;
+  text-align: center;
+}
+.language-section{
   display: flex;
+  margin-top: 20px;
+}
+.sp{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.btn{
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn button{
+  margin-left: 10px;
+  font-size: 16px;
+  height: 36px;
+  font-weight: 500;
+  width: 100px;
+  border-radius: 7px;
+  background-color: aliceblue;
+  transition: 0.5s;
+}
+.btn button:hover{
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+}
+.editor-head{
+  margin-top: 10px;
+  width: 100%;
 }
 .editor-container{
   padding-top: .4%;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.output{
+  margin-top: 10px;
+  height: 100%;
+
+}
+.output iframe{
+  width: 100%;
+}
+.dropdown{
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+  height: 36px;
+  font-weight: 500;
+  width: 150px;
+  border-radius: 7px;
+  background-color: aliceblue;
+  transition: 0.5s;
+}
+@media (max-width: 520px) {
+  .language-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .language-section button{
+    margin-bottom: 5px;
+  }
+  .editor-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -1,21 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Button = ({title, onClick}) => {
+const Button = ({ title, onClick }) => {
   return (
-    <div>
-      <button
-        style={{
-          maxWidth: "140px",
-          minWidth: "80px",
-          height: "30px",
-          marginRight: "5px"
-        }} 
-        onClick={onClick}
-      >
-        {title}
-      </button>
+    <div className="select-language">
+      <div className="btn">
+        <button onClick={onClick}>{title}</button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
